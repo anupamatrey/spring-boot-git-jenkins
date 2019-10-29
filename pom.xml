@@ -60,14 +60,13 @@
 	<repositories>
 		<repository>
 			<id>myMavenRepo.read</id>
-			<url>https://mymavenrepo.com/repo/TXKJZMjDdNDlJIfe0lSt/</url>
+			<url>http://repository.jboss.org/nexus/content/groups/public/</url>
 		</repository>
 	</repositories>
-
 	<distributionManagement>
 		<repository>
-			<id>myMavenRepo.write</id>
-			<url>https://mymavenrepo.com/repo/uXDkEFC7N6Kx31jAWQ75/</url>
+			<id>myMavenRepo.read</id>
+			<url>http://repository.jboss.org/nexus/content/groups/public/</url>
 		</repository>
 	</distributionManagement>
 </project>
