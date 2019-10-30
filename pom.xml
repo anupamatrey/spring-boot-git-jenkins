@@ -59,20 +59,18 @@
 	</build>
 	<repositories>
 		<repository>
-			<id>central</id>
-			<name>Maven Central</name>
-			<layout>default</layout>
-			<url>https://repo1.maven.org/maven2</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
+			<id>myMavenRepoRead</id>
+			<url>${myMavenRepoReadUrl}</url>
 		</repository>
 	</repositories>
-	<!-- <repositories> <repository> <id>myMavenRepoRead</id> <url>${myMavenRepoReadUrl}</url> 
-		</repository> </repositories> <distributionManagement> <repository> <id>myMavenRepoWrite</id> 
-		<url>${myMavenRepoWriteUrl}</url> </repository> <snapshotRepository> <id>myMavenRepoWrite</id> 
-		<url>${myMavenRepoWriteUrl}</url> </snapshotRepository> </distributionManagement> -->
+	<distributionManagement>
+		<repository>
+			<id>myMavenRepoWrite</id>
+			<url>${myMavenRepoWriteUrl}</url>
+		</repository>
+		<snapshotRepository>
+			<id>myMavenRepoWrite</id>
+			<url>${myMavenRepoWriteUrl}</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>
