@@ -57,20 +57,11 @@
 			</plugin>
 		</plugins>
 	</build>
-	<repositories>
-		<repository>
-			<id>myMavenRepoRead</id>
-			<url>${myMavenRepoReadUrl}</url>
-		</repository>
-	</repositories>
 	<distributionManagement>
-		<repository>
-			<id>myMavenRepoWrite</id>
-			<url>${myMavenRepoWriteUrl}</url>
-		</repository>
 		<snapshotRepository>
-			<id>myMavenRepoWrite</id>
-			<url>${myMavenRepoWriteUrl}</url>
+			<id>snapshots</id>
+			<name>anupam-VirtualBox-snapshots</name>
+			<url>http://localhost:8081/artifactory/libs-snapshot-local</url>
 		</snapshotRepository>
 	</distributionManagement>
 </project>
